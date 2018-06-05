@@ -1,0 +1,261 @@
+@import "reset.css";
+@import "prettyPhoto.css";
+@import "jquery.jscrollpane.css";
+@import "jplayer.css";
+@import url(http://fonts.googleapis.com/css?family=Medula+One);
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.clear {clear:both;}
+.table {display:table;}
+.wrapper {width:100%; overflow:hidden;}
+.relative {position:relative;}
+.absolute {position:absolute;}
+
+/* Global properties ======================================================== */
+body, html {height:100%;}
+
+body{ background:#C87108; border:0; font: 18px Arial, Helvetica, sans-serif; color:#EAEAEA ; line-height:18px; min-width:1000px; position:relative; overflow:hidden;min-width:1000px;}
+
+.spinner{ position:absolute; z-index:99; background:url(../images/loader.gif) 50% 50% no-repeat #C87108; width:100%; height:100%; top:0; left:0}
+
+#bgStretch {overflow:hidden;z-index:-1; position:fixed}
+
+.extra {min-width:1000px;min-height:100%; height:auto !important; height:100%; margin: 0 auto 0px; overflow:hidden; position:relative; z-index:10; }
+
+
+.main1 { width:100%;height:860px; position:relative; z-index:1;}
+
+.main2{ width:1000px; height:740px; position:absolute; left:50%; margin-left:-500px; top:50%; margin-top:-430px; z-index:2;}
+
+header{width: 100%; position: absolute; left: 0; top: 80px; z-index: 5; text-align: center;}
+header .txt1{font-family: 'Medula One', cursive; font-size: 80px; color: #08c770; line-height: 50px; padding-top: 10px;}
+header .txt2{font-family: 'Medula One', cursive; font-size: 35px; color: #08c770; line-height: 25px; padding-top: 0px;}
+
+.splash{ width:100%; position:absolute; left:0; top:500px; z-index:2;}
+#caption{ width:1000px; margin:0 auto; text-align:center; position:relative; z-index:1;}
+#caption li {display: block; width:100%;left: 0; top: 0; position: absolute; text-transform: uppercase; text-shadow:0px 0px 10px #C46B00;}
+#caption .txt1 { font-family:'Medula One', cursive; font-size:50px; color:#4cdfff; line-height:60px;}
+#caption .txt1 span{ color:#C46B00;}
+#caption .txt2 { font-family:'Medula One', cursive;font-size:35px; line-height:40px; color:#C46B00; padding-top:0px;}
+
+
+
+
+
+
+footer{width: 100%; height: 123px; background: url(../images/footer.jpg) 0 0 repeat-x; position: absolute; left: 0; bottom: 0; z-index: 30;}
+.bot1{width: 100%; position: relative; text-align: center;}
+.copyright{color:#F08800; line-height:15px; font-size: 15px;}
+.copyright a { color:#F08800;}
+.icons { position: absolute;right: 30px; top: 5px;}
+.icons > li { display:inline-block; padding:0 2px;position:relative;}
+.icons > li > a{display:block; width:100%; height:30px;}
+.tola{position: absolute; left: 30px; top: 5px;}
+
+
+
+
+
+/* ============================= main menu ====================== */
+
+.menu { display:block; width: 100%; height:70px; position:relative;text-align:center; white-space:nowrap; padding-bottom: 10px; }
+#menu { display:inline-block; height:70px; white-space:nowrap;}
+#menu > li:first-child{background:none;}
+#menu > li { display: inline-block;height:70px; position:relative; float:left; margin:0 1px; white-space:nowrap;padding-left: 2px; background: url(../images/markers.png) 0 20px no-repeat;}
+#menu > li > a{display: inline-block; height:100%; text-decoration:none; position:relative; padding-left:30px; padding-right:30px; overflow:hidden; }
+#menu > li > a .over1{display:block;position: absolute;width:100%; height:5px; left:0px; top:0px; z-index:30; text-align: center;}
+#menu > li > a .over2{display:inline-block; height: 5px; width: 100%;}
+#menu > li > a .txt1{ display:block; position: relative; width:100%; height:100%; left:0px; top:0px; z-index:5;font-family:'Medula One', cursive;font-size:33px; line-height:70px; color:#ffffff; text-decoration:none;   }
+#menu > li > a .txt2{ display:block; position: absolute; width:100%; height:100%; left:0px; top:0px; z-index:20;font-family:'Medula One', cursive;font-size:33px; line-height:70px; text-decoration:none;  }
+
+#menu > li.nav1 > a .over2{ background: #000000;}
+#menu > li.nav2 > a .over2{ background: #C87108;}
+#menu > li.nav3 > a .over2{ background: #58A000;}
+#menu > li.nav4 > a .over2{ background: #de5900;}
+#menu > li.nav5 > a .over2{ background: #DCBB05;}
+#menu > li.nav6 > a .over2{ background: #02A954;}
+
+#menu > li.nav1 > a .txt2{ color: #000000;}
+#menu > li.nav2 > a .txt2{ color: #C87108;}
+#menu > li.nav3 > a .txt2{ color: #58A000;}
+#menu > li.nav4 > a .txt2{ color: #de5900;}
+#menu > li.nav5 > a .txt2{ color: #DCBB05;}
+#menu > li.nav6 > a .txt2{ color: #02A954;}
+
+
+
+.menu_splash { position:absolute; left:6px; top:373px; z-index:10;}
+#menu_splash { w}
+#menu_splash > li { width:163px; height:94px; float: left; margin-right: 2px;}
+#menu_splash > li > a{display:block; width:100%; height:100%; text-decoration:none; position:relative; overflow:hidden;  }
+#menu_splash > li > a .img{width: 100%; position: absolute; left:0px; top:45px; z-index:5; text-align: center;}
+#menu_splash > li > a .over1{ display:block; position: absolute; width:100%; height:10px; left:0; bottom:0; z-index:20;}
+#menu_splash > li > a .over2{ display:block; position: absolute; width:100%; height:100%; left:0; bottom:0; z-index:2;}
+#menu_splash > li > a .txt1{ width: 100%;position: absolute; left:0; top: 20px; z-index:6; font-family:'Medula One', cursive;font-size:24px; line-height:30px; color:#fff; text-decoration:none; white-space:nowrap; letter-spacing:0px;text-align: center;}
+#menu_splash > li > a .txt2{ width: 100%;position: absolute; left:0; top: 50px; z-index:6; font-family:'Medula One', cursive;font-size:16px; line-height:20px; color:#fff; text-decoration:none; white-space:nowrap; letter-spacing:0px;text-align: center;}
+
+#menu_splash > li.nav1 .over1{ background: #000000;}
+#menu_splash > li.nav2 .over1{ background: #C87108;}
+#menu_splash > li.nav3 .over1{ background: #58A000;}
+#menu_splash > li.nav4 .over1{ background: #de5900;}
+#menu_splash > li.nav5 .over1{ background: #DCBB05;}
+#menu_splash > li.nav6 .over1{ background: #02A954;}
+
+#menu_splash > li.nav1 .over2{ background: url(../images/nav1.png) 0 0 no-repeat;}
+#menu_splash > li.nav2 .over2{ background: url(../images/nav2.png) 0 0 no-repeat;}
+#menu_splash > li.nav3 .over2{ background: url(../images/nav3.png) 0 0 no-repeat;}
+#menu_splash > li.nav4 .over2{ background: url(../images/nav4.png) 0 0 no-repeat;}
+#menu_splash > li.nav5 .over2{ background: url(../images/nav5.png) 0 0 no-repeat;}
+#menu_splash > li.nav6 .over2{ background: url(../images/nav6.png) 0 0 no-repeat;}
+
+
+
+
+
+
+/* ============================= main layout ====================== */
+
+
+
+#content{ width:988px; height:523px; position:absolute; left:6px; top:198px; z-index:1; overflow:hidden; }
+#content > ul{ }
+#content > ul > li{ width:988px; height:514px; border-bottom: 9px solid #718da6; background: url(../images/content_bg.jpg) 0 0 no-repeat; position:absolute;}
+
+#page_HOME{border-color: #000000!important;}
+#page_ABOUT{border-color: #C87108!important;}
+#page_SERVICES{border-color: #58A000!important;}
+#page_SOLUTIONS{border-color: #de5900!important;}
+#page_PARTNERS{border-color: #DCBB05!important;}
+#page_CONTACTS{border-color: #02A954!important;}
+
+.close{ display:block; width:20px; height:20px; position:absolute; right:37px; top:30px; z-index:30; background:url(../images/close.png) left top no-repeat;}
+.close:hover{ background-position: bottom;}
+
+.box{ width:900px;height:480px; position: relative; padding: 34px 39px 0px 49px; overflow: hidden;}
+
+.col0,.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12   { float:left;}
+
+.col0 { width:2px; height: 474px; background:url(../images/col0.png) 0 0 repeat-y; margin-left:24px; margin-right:24px; margin-top:-10px;}
+
+.col1{ width:420px;}
+.col2{ width:430px;}
+.col3{ width:200px;}
+
+
+
+
+
+
+
+.pad_left1{ padding-left:10px;}
+.pad_left2{ padding-left:20px;}
+.pad_left3{ padding-left:30px;}
+.pad_left4{ padding-left:40px;}
+.pad_left5{ padding-left:50px;}
+.pad_left6{ padding-left:60px;}
+
+
+
+
+a{ color:#C46B00; text-decoration: underline; outline:none}
+a:hover{ text-decoration: none}
+a.link1{ color:#C46B00; text-decoration: underline; outline:none}
+a.link1:hover{ text-decoration: none}
+
+h2{ font-family:'Medula One', cursive;font-weight:normal; font-size:30px; color:#C46B00; line-height:35px; padding:15px 0 15px 0;  }
+h2 span{font-family: 'Medula One', cursive;}
+.h3 { font-family:'Medula One', cursive;font-weight:normal; font-size:30px; color:#67ac0c; line-height:25px; padding:0px 0 5px 0;}
+
+
+.upper { text-transform:uppercase;}
+
+.color1{ color:#fff;}
+.color2{ color:#ffae00;}
+
+.text { padding:0 0 5px; display: block;}
+
+.line1 { height:1px; background:#4a4a4a; margin:15px 0;}
+
+.radius1{border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+.border1 { border:1px solid #707070;}
+
+
+
+.img1 {margin-bottom:20px;margin-right:20px;}
+.img2 {margin-right:20px; }
+.img3 {margin-bottom:20px;}
+
+.video1 {width:383px; height:167px; margin-bottom:10px;}
+.video1 a img {}
+
+.button1{ display:inline-block; height:25px;line-height:24px; text-decoration:none; margin-top:10px; margin-bottom:10px; font-size:12px;  color:#ffffff; white-space:nowrap; letter-spacing:0px; background: #000; border:1px solid #cfcfcf;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; padding: 0 15px; 
+transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+.button1:hover {color: #C46B00; border-color: #C46B00;}
+
+.ul1{ margin-bottom:0px;}
+.ul1 > li { line-height:28px;font-family:'Medula One', cursive; font-size: 25px; }
+.ul1 > li a{ display:block; height:100%; text-decoration:none; color:#FF8B00; padding-left:15px; background: url(../images/li_st1.gif) 0 12px no-repeat;}
+.ul1 > li a:hover{ text-decoration:underline; color:#C46B00;background: url(../images/li_st1_over.gif) 0 12px no-repeat; }
+
+.partners1 { width:188px; padding-bottom:25px; float:left; margin-right:18px; }
+.partners1.last { margin-right:0px; }
+.partners1 .txt{}
+
+.photo1 {width:188px; height:117px; margin-bottom:10px;}
+.photo1 a img {}
+
+.google_map{
+
+    width: 420px;
+    height: 270px;
+    border-radius:0px;
+    background: #fff;
+    position:relative;
+    overflow:hidden; margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+
+
+/*===================== jScrollPane =====================*/
+
+.scroll-pane{width: 100%; height:393px; overflow: auto;}
+
+
+/*================= Contacts =========================*/
+
+#note{ width:420px;}
+.notification_error{ color:#f00; margin-bottom:5px }
+.notification_ok{ text-align: center;} 
+
+#ajax-contact-form label{float:left; width: 100px; line-height:31px; color:#EAEAEA;}
+#ajax-contact-form label.c{ margin-top:5px;}
+
+#ajax-contact-form input{ float:left; width:310px; height:29px; font-family:Arial, Helvetica, sans-serif; font-size:25px; color: #000; background: #f9f9fa; border: 1px solid #737e88; margin-bottom:5px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; }
+#ajax-contact-form input:focus{border-color:#000; }
+
+#ajax-contact-form textarea{ float:left; width:310px; height:130px; font-family:Arial, Helvetica, sans-serif; font-size:25px; color: #000; background: #f9f9fa; border: 1px solid #737e88; margin-bottom:5px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#ajax-contact-form textarea:focus{border-color:#000; }
+
+#ajax-contact-form img{float:left; width:140px; height:53px; margin-top:5px; margin-left:10px;}
+
+#ajax-contact-form input.capthca{ float:left; width:92px; margin-top:5px; margin-right:10px;}
+
+#ajax-contact-form input.submit{ width:94px; height:37px; cursor:pointer; background:url(../images/submit.png) left top no-repeat; border:none; margin:5px 0 0 0px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;  text-indent:-999%; }
+#ajax-contact-form input.submit:hover{ background-position:bottom;}
+
